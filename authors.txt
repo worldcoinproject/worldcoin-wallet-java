@@ -1,0 +1,18 @@
+WorldcoinWallet
+
+Developers Multibit:
+-----------
+Gary Rowe
+Jim Burton
+Jonny Heggheim
+Tim Molter
+
+Developers Worldcoin Wallet
+-----------
+Huck Doe
+
+Internationalisation:
+---------------------
+http://translate.worldcoin-wallet.org
+
+Thanks to all the Worldcoin Wallet localisers.

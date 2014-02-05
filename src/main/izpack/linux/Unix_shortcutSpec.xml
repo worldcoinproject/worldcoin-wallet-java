@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<shortcuts>
+
+  <programGroup defaultName="WorldcoinWallet"
+  location="applications"/>
+
+   <shortcut
+     name="WorldcoinWallet ${project.version}"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="/usr/bin/java"
+     commandLine="-jar $INSTALL_PATH/worldcoin-wallet-exe-full.jar"
+     initialState="normal"
+     iconFile="$INSTALL_PATH/worldcoin48.png"
+     workingDirectory="$INSTALL_PATH"
+     type="Application"
+     encoding="UTF-8"
+     description="Worldcoin Wallet ${project.version}">
+   </shortcut>
+   <shortcut
+     name="Uninstall WorldcoinWallet ${project.version}"
+     programGroup="yes"
+     desktop="yes"
+     applications="no"
+     startMenu="no"
+     startup="no"
+     target="/usr/bin/java"
+     commandLine="-jar $INSTALL_PATH/Uninstaller/uninstaller.jar"
+     initialState="normal"
+     workingDirectory="$INSTALL_PATH"
+     type="Application"
+     encoding="UTF-8"
+     description="Uninstall Worldcoin Wallet ${project.version}">
+   </shortcut>
+</shortcuts>
+

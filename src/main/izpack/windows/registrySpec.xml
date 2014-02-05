@@ -1,0 +1,42 @@
+<!--
+Require the following structure on Windows
+see http://msdn.microsoft.com/en-us/library/aa767914(v=vs.85).aspx
+
+worldcoin.reg:
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\worldcoin]
+@="URL:Worldcoin Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\worldcoin\DefaultIcon]
+@="wallet.exe,1"
+
+[HKEY_CLASSES_ROOT\worldcoin\shell]
+
+[HKEY_CLASSES_ROOT\worldcoin\shell\open]
+
+[HKEY_CLASSES_ROOT\worldcoin\shell\open\command]
+@="\"C:\\Program Files\\WorldcoinWallet-0.2.0beta4\\wallet.exe\" \"%1\""
+
+
+-->
+<registry>
+  <pack name="WorldcoinWallet">
+    <key root="HKCR" keypath="worldcoin" />
+    <value root="HKCR" name="" keypath="worldcoin" string="URL:Worldcoin Protocol"/>
+    <value root="HKCR" name="URL Protocol" keypath="worldcoin" string=""/>
+    <value root="HKCR" name="UseOriginalUrlEncoding" keypath="worldcoin" dword="1"/>
+
+    <key root="HKCR" keypath="worldcoin\DefaultIcon" />
+    <value root="HKCR" name="" keypath="worldcoin\DefaultIcon" string="worldcoin-wallet.exe,1"/>
+
+    <key root="HKCR" keypath="worldcoin\shell" />
+
+    <key root="HKCR" keypath="worldcoin\shell\open" />
+
+    <key root="HKCR" keypath="worldcoin\shell\open\command" />
+    <value root="HKCR" keypath="worldcoin\shell\open\command" name="" string="&quot;$INSTALL_PATH\worldcoin-wallet.exe&quot; &quot;%1&quot;" />
+
+  </pack>
+</registry>
