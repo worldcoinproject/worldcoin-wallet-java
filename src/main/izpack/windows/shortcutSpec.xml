@@ -1,0 +1,25 @@
+<shortcuts> 
+   <programGroup defaultName="WorldcoinWallet" location="applications"/>
+   <shortcut name="WorldcoinWallet ${project.version}"
+             target="$INSTALL_PATH/worldcoin-wallet.exe"
+             description="Worldcoin Wallet"
+             workingDirectory="$INSTALL_PATH"
+             iconFile="$INSTALL_PATH/worldcoin.ico"
+             initialState="normal" 
+             programGroup="yes"
+             desktop="yes" 
+             applications="no" 
+             startMenu="no" 
+             startup="no">
+    </shortcut>
+    <shortcut name="Uninstall WorldcoinWallet ${project.version}"
+             target="$INSTALL_PATH/uninstaller/uninstaller.jar" 
+             description="Uninstall Worldcoin Wallet"
+             initialState="normal" 
+             programGroup="yes"
+             desktop="no" 
+             applications="no" 
+             startMenu="no" 
+             startup="no">
+    </shortcut>
+</shortcuts>
